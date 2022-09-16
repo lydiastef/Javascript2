@@ -34,6 +34,29 @@ let people = [
     country: 'Norway', //string
     knowsHowToProgram: true //boolean
     },
+
 ]
 
-console.log(people);
+if(people[0].children === people[4].children) {
+    console.log("person 2 and 3 have the same amount of children");
+}
+
+if(people[0].knowsHowToProgram === people[3].knowsHowToProgram) {
+    console.log("Yay");
+} else {"LMGTFY";
+} 
+
+switch (people[1].country) {
+    case "Iceland":
+        console.log("Hæ");
+        break;
+    case "Spain":
+        console.log("Hola");
+        break;
+    case "Korea":
+        console.log("여보세요");
+        break;  
+
+    default: 
+    console.log("Hello");
+    }  
