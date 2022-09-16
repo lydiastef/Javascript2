@@ -42,6 +42,7 @@ let people = [
 
 ]
 
+//if statements and console log
 if(people[0].age > people[4].age) {
     console.log("first person older than last person");
 }
@@ -50,11 +51,13 @@ if(people[3].children === people[4].children) {
     console.log("person 2 and 3 have the same amount of children");
 }
 
+//if else
 if(people[0].knowsHowToProgram === people[3].knowsHowToProgram) {
     console.log("Yay");
 } else {"LMGTFY";
 } 
 
+//switch
 switch (people[1].country) {
     case "Iceland":
         console.log("Hæ");
