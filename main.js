@@ -2,6 +2,7 @@ let people = [
     {
     name: 'Hanan Wadworth', //string
     dateOfBirth: 1/15/1987, //number
+    age: 35, //number
     children: 3, //number
     country: 'China', //string
     knowsHowToProgram: false //boolean
@@ -9,6 +10,7 @@ let people = [
     {
     name: 'Annelise Gavahan', //string
     dateOfBirth: 3/9/2001, //number
+    age: 21, //number
     children: 3, //number
     country: 'Germany', //string
     knowsHowToProgram: false //boolean
@@ -16,6 +18,7 @@ let people = [
     {
     name: 'Genevieve Barnhart', //string
     dateOfBirth: 1/12/1986, //number
+    age: 36, //number
     children: 2, //number
     country: 'Myanmar', //string
     knowsHowToProgram: true //boolean
@@ -23,6 +26,7 @@ let people = [
     {
     name: 'Rachelle Coltart', //string
     dateOfBirth: 11/11/1987, //number
+    age: 35, //number
     children: 0, //number
     country: 'China', //string
     knowsHowToProgram: false //boolean
@@ -30,6 +34,7 @@ let people = [
     {
     name: 'Janelle Droogan', //string
     dateOfBirth: 4/21/1994, //number
+    age: 28, //number
     children: 3, //number
     country: 'Norway', //string
     knowsHowToProgram: true //boolean
@@ -37,7 +42,11 @@ let people = [
 
 ]
 
-if(people[0].children === people[4].children) {
+if(people[0].age > people[4].age) {
+    console.log("first person older than last person");
+}
+
+if(people[3].children === people[4].children) {
     console.log("person 2 and 3 have the same amount of children");
 }
 
@@ -57,6 +66,6 @@ switch (people[1].country) {
         console.log("여보세요");
         break;  
 
-    default: 
+    default:  
     console.log("Hello");
     }  
